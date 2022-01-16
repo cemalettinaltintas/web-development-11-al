@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+        }
+      .box {
+        width: 250px;
+        height: 250px;
+        background-color: bisque;
+        border: 1px solid red;
+        
+      }
+      #first{
+          float: left;
+      }
+      #second{
+          float: right;
+      }
+      footer{
+          background-color: aquamarine;
+      }
+      .clearfix::after{
+          content: "";
+          display: block;
+          clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container clearfix">
+      <div id="first" class="box">Box 1</div>
+      <div id="second" class="box">Box 2</div>
+    </div>
+    
+    <footer>
+        Tüm hakları saklıdıdır.
+    </footer>
+  </body>
+</html>
